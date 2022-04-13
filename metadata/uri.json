@@ -1,5 +1,17 @@
 {
-	"id": 0,
-	"name": "ChihHung Pass Collection",
-	"image": "https://raw.githubusercontent.com/darren-k-chen/CH_Token/main/metadata/Joel_PHOTO.jpg"
+    "description": "Joel Personal NFT Test", 
+    "external_url": "https://agai.cloud/", 
+    "image": "https://raw.githubusercontent.com/darren-k-chen/CH_Token/master/metadata/Joel_PHOTO.jpg", 
+    "name": "ChihHung Pass Collection",
+    "attributes": [
+        {
+            "trait_type": "HEAD",
+            "value": "CROWN"
+        },
+        {
+            "display_type": "date", 
+            "trait_type": "Date of issue", 
+            "value": 1655588888
+        }
+    ]
 }
