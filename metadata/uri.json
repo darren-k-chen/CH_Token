@@ -1,6 +1,5 @@
 {
-  "description": "Joel Personal NFT", 
-  "external_url": "https://agai.cloud/", 
-  "image": "https://raw.githubusercontent.com/darren-k-chen/CH_Token/main/metadata/Joel_PHOTO.jpg", 
-  "name": "ChihHung Pass Collection"
+	"id": 0,
+	"name": "ChihHung Pass Collection",
+	"image": "https://raw.githubusercontent.com/darren-k-chen/CH_Token/main/metadata/Joel_PHOTO.jpg"
 }
