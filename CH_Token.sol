@@ -147,10 +147,10 @@ contract ChihHungPass is ERC721A, Ownable {
         );
     }
 
-    function presaleMintItems(
+    function presaleMintItems (
         uint256 _quantity,
         bytes32[] calldata proof
-    )  
+    )
      external payable callerIsUser
      hasCorrectAmount(msg.value, _quantity)
     {
