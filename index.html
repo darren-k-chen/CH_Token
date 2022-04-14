@@ -18,7 +18,7 @@
     </script>
 
     <!-- web3 functionality code -->
-    <script type="module" src="./web3feature.js"></script>
+    <!-- <script type="module" src="./web3feature.js"></script> -->
 
     <button onclick="connect()" id="btn-connect" style="display: block; margin: 50px auto;">Connect Wallet</button>
     <script>
@@ -52,6 +52,7 @@
             contractCHT.methods.mint(1).send({
                 from: walletAddress
             }).then(function (result) { });
+        }    
     </script>
     
     <!-- <script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script> -->
