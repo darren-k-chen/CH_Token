@@ -9,6 +9,20 @@
         function detectMetaMask() {
             if (typeof window.ethereum !== 'undefined' && window.ethereum.isMetaMask) {
                 console.log("found window.ethereum!");
+                window.ethereum.request({ 
+                    method: "wallet_addEthereumChain",
+                    params: [{
+                        chainId: "0x89",
+                        rpcUrls: ["https://rpc-mainnet.matic.network/"],
+                        chainName: "Matic Mainnet",
+                        nativeCurrency: {
+                            name: "MATIC",
+                            symbol: "MATIC",
+                            decimals: 18
+                        },
+                        blockExplorerUrls: ["https://polygonscan.com/"]
+                    }]
+                });
                 return true
             } else {
                 return false
@@ -32,20 +46,6 @@
                 } else {
                     console.error(error);
                 }
-            });
-            window.ethereum.request({
-                method: "wallet_addEthereumChain",
-                params: [{
-                    chainId: "0x89",
-                    rpcUrls: ["https://rpc-mainnet.matic.network/"],
-                    chainName: "Matic Mainnet",
-                    nativeCurrency: {
-                        name: "MATIC",
-                        symbol: "MATIC",
-                        decimals: 18
-                    },
-                    blockExplorerUrls: ["https://polygonscan.com/"]
-                }]
             });
         }
     </script>
