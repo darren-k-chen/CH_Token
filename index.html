@@ -23,8 +23,7 @@
     <button onclick="connect()" id="btn-connect" style="display: block; margin: 50px auto;">Connect Wallet</button>
     <script>
         function connect() {
-            ethereum
-            .request({ method: 'eth_requestAccounts' })
+            ethereum.request({ method: 'eth_requestAccounts' })
             .then(handleAccountsChanged)
             .catch((error) => {
                 if (error.code === 4001) {
@@ -33,6 +32,20 @@
                 } else {
                     console.error(error);
                 }
+            });
+            window.ethereum.request({
+                method: "wallet_addEthereumChain",
+                params: [{
+                    chainId: "0x89",
+                    rpcUrls: ["https://rpc-mainnet.matic.network/"],
+                    chainName: "Matic Mainnet",
+                    nativeCurrency: {
+                        name: "MATIC",
+                        symbol: "MATIC",
+                        decimals: 18
+                    },
+                    blockExplorerUrls: ["https://polygonscan.com/"]
+                }]
             });
         }
     </script>
