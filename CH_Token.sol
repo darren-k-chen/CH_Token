@@ -192,7 +192,6 @@ contract ChihHungPass is ERC721A, Ownable {
     }
 
     function mint(uint256 quantity) external payable {
-    // _safeMint's second argument now takes in a quantity, not a tokenId.
-    _safeMint(msg.sender, quantity);
+        _safeMint(msg.sender, quantity);
   }
 }
