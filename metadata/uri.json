@@ -1,17 +1,16 @@
 {
-    "description": "Joel Personal NFT Test", 
-    "external_url": "https://agai.cloud/", 
-    "image": "https://raw.githubusercontent.com/darren-k-chen/CH_Token/master/metadata/Joel_PHOTO.jpg", 
-    "name": "ChihHung Pass Collection",
+    "description": "Cha Xin Yuan NFT Sample", 
+    "image": "https://raw.githubusercontent.com/darren-k-chen/TEA_Sample/master/metadata/NFT_Sample.jpg", 
+    "name": "Cha Xin Yuan NFT Sample",
     "attributes": [
         {
-            "trait_type": "HEAD",
-            "value": "CROWN"
+            "trait_type": "LOGO",
+            "value": "1"
         },
         {
             "display_type": "date", 
             "trait_type": "Date of issue", 
-            "value": 1655588888
+            "value": 1652088888
         }
     ]
 }
